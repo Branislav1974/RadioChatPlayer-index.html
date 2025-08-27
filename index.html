@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hit Radio Anny</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #111;
+      font-family: Arial, sans-serif;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .chat-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 15px 30px;
+      background: #ff4081;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .chat-button:hover {
+      background: #e73370;
+    }
+
+    .player-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    audio {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hit Radio Anny</h1>
+
+  <!-- Gumb za chat -->
+  <a class="chat-button" href="https://organizations.minnit.chat/958011086792258/c/Main?embed" target="_blank">Otvori chat</a>
+
+  <!-- Fiksni radio player -->
+  <div class="player-container">
+    <audio id="radioPlayer" controls>
+      <source src="https://stream.zeno.fm/uf756nncuv8uv" type="audio/mpeg">
+      Vaš preglednik ne podržava audio element.
+    </audio>
+  </div>
+</body>
+</html>
